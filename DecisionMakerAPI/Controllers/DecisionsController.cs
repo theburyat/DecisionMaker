@@ -76,4 +76,10 @@ public class DecisionsController : ControllerBase
 
         return gameResult;
     }
+
+    [HttpGet("time")]
+    public string GetCurrentTime()
+    {
+        return DateTime.Now.ToString("h:mm:ss tt");
+    }
 }
