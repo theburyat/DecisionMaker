@@ -82,4 +82,10 @@ public class DecisionsController : ControllerBase
     {
         return DateTime.Now.ToString("h:mm:ss tt");
     }
+
+    [HttpGet("random")]
+    public int GetRandomNumber([FromQuery] int minValue, [FromQuery] int maxValue)
+    {
+        return _random.Next(minValue, maxValue + 1);
+    }
 }
