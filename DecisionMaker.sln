@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecisionMakerAPI", "DecisionMakerAPI\DecisionMakerAPI.csproj", "{B800D5A5-6C7F-448B-9B92-1E0613789BFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{67E43D80-E1AA-4E2A-9452-1BF5D52C230F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B800D5A5-6C7F-448B-9B92-1E0613789BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B800D5A5-6C7F-448B-9B92-1E0613789BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B800D5A5-6C7F-448B-9B92-1E0613789BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B800D5A5-6C7F-448B-9B92-1E0613789BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E43D80-E1AA-4E2A-9452-1BF5D52C230F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E43D80-E1AA-4E2A-9452-1BF5D52C230F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E43D80-E1AA-4E2A-9452-1BF5D52C230F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E43D80-E1AA-4E2A-9452-1BF5D52C230F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
