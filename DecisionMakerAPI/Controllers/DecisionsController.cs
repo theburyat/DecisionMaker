@@ -84,8 +84,24 @@ public class DecisionsController : ControllerBase
     }
 
     [HttpGet("random")]
-    public int GetRandomNumber([FromQuery] int minValue, [FromQuery] int maxValue)
+    public ActionResult<int> GetRandomNumber([FromQuery] int minValue, [FromQuery] int maxValue)
     {
-        return _random.Next(minValue, maxValue + 1);
+        try
+        {
+            ValidateNumbers(minValue, maxValue);
+        }
+        catch (Exception ex)
+        {
+            _logger.Log(LogLevel.Error, ex.Message);
+            return BadRequest(ex.Message);
+        }
+
+        return Ok(_random.Next(minValue, maxValue + 1));
+    }
+
+    private void ValidateNumbers(int minValue, int maxValue)
+    {
+        if (minValue > maxValue) throw new Exception("Bad interval");
+        if (maxValue == int.MaxValue) throw new Exception("To big max value");
     }
 }
