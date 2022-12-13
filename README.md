@@ -1,6 +1,16 @@
 # Decision Maker
 Сервис, который примет за вас сложное (или не очень) решение
 
+## Тесты
+
+`master`:
+
+[![Tests](https://github.com/theburyat/DecisionMaker/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/theburyat/DecisionMaker/actions/workflows/tests.yml)
+
+`develop`:
+
+[![Tests](https://github.com/theburyat/DecisionMaker/actions/workflows/tests.yml/badge.svg?branch=develop)](https://github.com/theburyat/DecisionMaker/actions/workflows/tests.yml)
+
 ## Запуск
 * Клонирование репозитория
 ```
